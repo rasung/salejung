@@ -72,7 +72,7 @@ app.post('/login',function (req,res){
       }
       if (body.id === req.body.userID) {
         req.session.key = req.body;
-        response.end('done');
+        res.end('done');
       }
     });
   }
@@ -94,7 +94,7 @@ app.post('/login',function (req,res){
       }
       if (body.id === Number(req.body.userID)) {
         req.session.key = req.body;
-        response.end('done'); 
+        res.end('done'); 
       }
     });
   }
